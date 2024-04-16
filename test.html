@@ -15,8 +15,6 @@
   margin: 2em auto;
   width: 100%;
 }
-
-
 .info input[type=radio] {
   display: none;
 }
@@ -98,10 +96,72 @@
         <label for="tab-3">專欄</label>
         <div class="tab-content-3">Content 3</div>
         <!--   tab group end -->
-       <div class="testttt">
         
-       </div> 
         
+        <section class="info-tab">
+          <!--   tab group -->
+          <input type="radio" id="tab-1" name="tab" checked="checked">
+          <label for="tab-1">交通指南</label>
+          <div class="tab-content">
+              
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-2">
+          <label for="tab-2">聯絡方式</label>
+          <div class="tab-content">
+              
+              
+              
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-3">
+          <label for="tab-3">表單詢問</label>
+          <div class="tab-content">
+              
+          </div>
+          <!--   tab group end -->
       </section>
 </body>
 </html>
+
+<div class="form">
+  <div class="inner-title">填寫表單</div>
+  <p>有甚麼事情可以協助您的呢？填寫後三天內會有專人撥電話或email聯絡您唷！</p>
+  <form action="" method="get" class="form-write">
+      <div class="name">
+        <label for="form">姓名</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <input type="radio" name="male" id="male" value="male">
+<label for="male">男性</label>
+<input type="radio" name="female" id="female" value="female">
+<label for="female">女性</label>
+      <div class="gender">
+        <label for="">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Subscribe!" />
+      </div>
+    </form>
+</div>
+.tab .form input {
+  display: block;
+}
+.tab .form label {
+  cursor: auto;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+  background-color: #f4e8c0;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 10px;
+}

@@ -1,0 +1,123 @@
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+    padding-top: 50px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.tab input[type=radio] {
+    display: none;
+}
+.tab input[type=radio]:checked + label {
+    background-color: #ffd000;
+    transform: translatey(1px);
+}
+.tab input[type=radio]:checked + label + .tab-content {
+    display: block;
+}
+.tab label {
+    cursor: pointer;
+    order: 0;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: #ffd00099;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 10px;
+}
+
+.tab label:hover {
+    color: black;
+}
+.tab .tab-content {
+    display: none;
+    padding: 1em;
+    width: 100%;
+    order: 1;
+}
+/* ------------------ */
+.traffic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.traffic .inner-title {
+    margin: 0px;
+}
+.traffic .txt {
+    width: 38%;
+    padding: 0px 50px;
+}
+.traffic .train {
+    border-bottom: 1px solid #000;
+}
+.traffic .txt p {
+    margin: 20px 0px;
+}
+.bus {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bus .taipei {
+    margin-bottom: 100px;
+}
+.traffic .txt a {
+    display: block;
+    color: #000;
+    margin: 20px 0px;
+}
+.bus .linkou {
+    margin-bottom: 100px;
+}
+.bus .hsinchu {
+    margin-bottom: 100px;
+}
+.traffic .map iframe {
+    width: 500px;
+    height: 375px;
+}
+.traffic .map p {
+    margin: 20px 0px;
+}
+
+/* --------------------------- */
+.contant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qrcode {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.qrcode .qr {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.qrcode img {
+    width: 150px;
+}
+
+.qrcode .inner-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contant .txt {
+    width: 710px;
+}
+.contant .txt p {
+    margin: 30px 0px;
+    border-bottom: 1px solid #000;
+}
