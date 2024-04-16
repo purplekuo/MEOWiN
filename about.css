@@ -27,7 +27,6 @@
     font-family: "Cherry Bomb One";
     color: white;
     font-size: 72px;
-    letter-spacing: 16px;
 }
 section {
     background-color: #F4E8C0;
@@ -62,7 +61,7 @@ section p {
 
 .inner-title {
     line-height: 40px;
-    letter-spacing: 0.18em;
+    letter-spacing: 20%;
     margin: 50px 0px 0px 0px;
     font-size: 24px;
 }
