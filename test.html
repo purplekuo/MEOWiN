@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin: 2em auto;
+  width: 100%;
+}
+.info input[type=radio] {
+  display: none;
+}
+.info input[type=radio]:checked + label {
+  background-color: #ffd000;
+  transform: translatey(1px);
+}
+.info input[type=radio]:checked + label + .tab-content {
+  display: block;
+}
+.info input[id=tab-0]:checked + label + .tab-content {
+  display: block;
+}
+.info label {
+    cursor: pointer;
+    order: 0;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: #ffd00099;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 10px;
+}
+}
+.info label:hover {
+  color: black;
+}
+.tab-content {
+  /* display: none; */
+  padding: 1em;
+  width: 100%;
+  order: 1;
+}
+.info input[id=tab-1]:checked + .tab-content-2{
+        display: none;
+}
+/* -------- */
+.intro {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 18.75%; */
+}
+.intro .txt {
+    width: 20%;
+}
+.intro .image {
+    width: 40%;
+}
+.intro .image img {
+    width: 100%;
+}
+</style>
+<body>
+    <section class="info">
+        <!--   tab group -->
+        <input type="radio" name="tab" id="tab-0"  checked="checked">
+        <label for="tab-0">全部</label>
+
+
+        <input type="radio" name="tab" id="tab-1">
+        <label for="tab-1">重要</label>
+        <div class="tab-content">content1
+        </div>
+        <!--   tab group end -->
+        
+        <!--   tab group -->
+        <input type="radio" name="tab" id="tab-2">
+        <label for="tab-2">活動</label>
+        <div class="tab-content-2">Content 2</div>
+        <!--   tab group end -->
+        
+        <!--   tab group -->
+        <input type="radio" name="tab" id="tab-3">
+        <label for="tab-3">專欄</label>
+        <div class="tab-content-3">Content 3</div>
+        <!--   tab group end -->
+        
+        
+        <section class="info-tab">
+          <!--   tab group -->
+          <input type="radio" id="tab-1" name="tab" checked="checked">
+          <label for="tab-1">交通指南</label>
+          <div class="tab-content">
+              
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-2">
+          <label for="tab-2">聯絡方式</label>
+          <div class="tab-content">
+              
+              
+              
+          </div>
+          <!--   tab group end -->
+          
+          <!--   tab group -->
+          <input type="radio" name="tab" id="tab-3">
+          <label for="tab-3">表單詢問</label>
+          <div class="tab-content">
+              
+          </div>
+          <!--   tab group end -->
+      </section>
+</body>
+</html>
+
+<div class="form">
+  <div class="inner-title">填寫表單</div>
+  <p>有甚麼事情可以協助您的呢？填寫後三天內會有專人撥電話或email聯絡您唷！</p>
+  <form action="" method="get" class="form-write">
+      <div class="name">
+        <label for="form">姓名</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <input type="radio" name="male" id="male" value="male">
+<label for="male">男性</label>
+<input type="radio" name="female" id="female" value="female">
+<label for="female">女性</label>
+      <div class="gender">
+        <label for="">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Subscribe!" />
+      </div>
+    </form>
+</div>
+.tab .form input {
+  display: block;
+}
+.tab .form label {
+  cursor: auto;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+  background-color: #f4e8c0;
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 10px;
+}
