@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=radio]:checked + label + .tab {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="test">
+        <input type="radio" id="tab-1" name="tab" checked="checked">
+        
+        <input type="radio" id="tab-2" name="tab" checked="checked">
+        
+        <input type="radio" id="tab-3" name="tab" checked="checked">
+        
+        <label for="tab-1">1</label>
+        <div class="tab">11111</div>
+
+        <label for="tab-2">2</label>
+        <div class="tab">22222</div>
+
+        <label for="tab-3">3</label>
+        <div class="tab">33333</div>
+    </div>
+    
+</body>
+</html>
