@@ -207,7 +207,6 @@ section p {
     justify-content: center;
 }
 .opening .wrap{
-    /* border: #ffd000 dashed 5px ; */
     background: 
     linear-gradient(90deg, #ffd000 66%, transparent 0) repeat-x,
     linear-gradient(90deg, #ffd000 50%, transparent 0) repeat-x,
