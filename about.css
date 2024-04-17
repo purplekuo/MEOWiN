@@ -178,7 +178,7 @@ section p {
 
 .infocard {
     border-radius: 20px 0px 0px 20px;
-    width: 810px;
+    width: 800px;
     background-color: #ffd00099;
     display: flex;
     flex-wrap: wrap;
