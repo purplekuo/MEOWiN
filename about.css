@@ -1,71 +1,4 @@
-.banner {
-    background-image: url("./image/other-bg.jpg");
-    /* background-size:no-repeat fixed; */
-    background-size: 100% 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 6.5%;
-    padding-bottom: 6.5%;
-}
-.banner .wrap {
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.banner .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.banner img {
-    width: 200px;
-    
-}
-.banner span {
-    font-family: "Cherry Bomb One";
-    color: white;
-    font-size: 72px;
-    letter-spacing: 16px;
-}
-section {
-    background-color: #F4E8C0;
-    /* padding-top: 100px; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* padding-right: 18.75%; */
-}
-.container {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.eng-title {
-    width: 100%;
-    font-family: "Cherry Bomb One";
-    font-size: 48px;
-    letter-spacing: 16px;
-    margin-top: 100px;
-    /* margin-bottom: 150px; */
-    display: flex;
-    justify-content: center;
-}
-section p {
-    line-height: 25px;
-    letter-spacing: 0.18em;
-    margin: 50px 0px 0px 0px;
-    font-size: 14px;
-}
 
-.inner-title {
-    line-height: 40px;
-    letter-spacing: 0.18em;
-    margin: 50px 0px 0px 0px;
-    font-size: 24px;
-}
 .about .container{
     margin-left: 18.75%;
     display: flex;
@@ -78,10 +11,11 @@ section p {
 }
 
 .about .image-about {
-    width: 50%;
-    position: relative;
-    left: 10%;
-    top: 20%;
+    width: 40%;
+    transform: translate(2%,15%);
+    /* position: relative;
+    left: 1%;
+    top: 20%; */
 }
 .about .image-about img {
     width: 100%;
@@ -119,15 +53,24 @@ section p {
 .ourcats {
     background-image: url("./image/about-cat-bg.png");
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding-bottom: 50px;
+    /* justify-content: space-between; */
+}
+.cardlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
 }
 .namelist {
-    margin-left: 10%;
-    width: 250px;
-    height: 410px;
+    /* margin-left: 5%; */
+    width: 30%;
+    /* height: 75vh; */
+    /* height: 20%; */
     overflow: scroll;
 }
 .namelist::-webkit-scrollbar {
@@ -141,14 +84,14 @@ section p {
   } 
 .namecard {
     border-radius: 20px;
-    width: 240px;
-    height: 80px;
-    background-color: #ffd00099;
+    width:100%;
+    height: 20%;
+    background-color: #ffcc2299;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
-    margin: 10px 10px;
+    margin: 0px 0px 10px 0px;
 }
 .cat-headshot {
     width: 20%;
@@ -159,8 +102,11 @@ section p {
 }
 .cat-headshot img {
     width: 100%;
+    border-radius: 25%;
 }
-
+/* .ourcats .eng-title{
+    margin-bottom: 50px;
+} */
 .ourcats .name {
     margin: 0px 10px;
     display: flex;
@@ -177,53 +123,89 @@ section p {
 }
 
 .infocard {
-    border-radius: 20px 0px 0px 20px;
-    width: 780px;
-    background-color: #ffd00099;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0px 50px 0px;
-    padding:20px 0px 20px 40px;
-}
-.cat-photolist {
-    width: 100%;
-    /* height: 80%; */
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    overflow: hidden;
-}
-.cat-photo:nth-child(1)  {
-    width: 50%;
+    width: 40%;
+    border-radius: 20px;
+    background-color: #ffcc2299;
+    column-gap: 5%;
+    padding:20px 40px 20px 40px;
+    margin: 0px 0px auto 0px;
 
 }
-.cat-photo:nth-child(2) {
-    width: 50%;
-    position: absolute;
-    left: 55%;
+.cat-photo {
+    width:100%;
+    height: auto;
+
 }
 .cat-photo img {
     width: 100%;
+    border-radius: 20px;
 }
 
-.dot {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-.dot img {
-    width: 15px;
-    margin: 5px;
-} 
-
-.cat-info {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 .ourcats .cat-info p {
-    line-height: 25px;
+    /* width: 100%; */
     letter-spacing: 0.18em;
-    margin: 5px 0px;
-    font-size: 14px;
+    margin: 5px 0 5px 5px;
+    /* font-size: 14px; */
 }
+@media screen and (max-width: 768px){
+    
+   
+    .about .container{
+        justify-content: center;
+        margin:auto;
+        overflow: visible;
+    }
+    .about .txt {
+        width: 80%;
+    }
+    .about .image-about {
+        width: 40%;
+        position:static;
+        transform: translate(50%,20%);
+    }
+    .notion .container{
+        margin:auto;
+        justify-content: center;
+        transform: translateY(-10%);
+    }
+    .notion .image-notion {
+        width: 40%;
+        position: static;
+        transform: translateX(-70%);
+
+    }
+    .notion .txt {
+        width: 80%;
+    }
+    .notion .image-notion2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .notion .image-notion2 img {
+        width: 50%;
+        left: -5%;
+    }
+    .notion {
+        margin-bottom: -15%;
+    }
+    .ourcats .name span {
+        font-size: 16px;
+    }
+    .infocard {
+        width: 40%;
+        padding:10px 20px 10px 20px;
+        margin: 0px 0px auto 0px;
+    }
+}
+@media screen and (max-width: 430px) {
+
+    .notion {
+        margin-bottom: -25%;
+    }
+    .ourcats .name span {
+        font-size: 12px;
+    }
+}  

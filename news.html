@@ -9,25 +9,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEOWiN</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="nav_footer.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <script src="./header.js"></script>
+    <link rel="stylesheet" href="setting.css">
     <link rel="stylesheet" href="news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 <body>
-    <div class="navlist">
-        <div class="nav">
+    <div class="header">
+        <div class="menu">
             <a class=tag href="./about.html">關於我們</a>
             <a class=tag href="./info.html">館內資訊</a>
             <a class=tag href="./news.html">最新消息</a>
             <a class=logo href="./index.html"><img src="./image/logo_longer.png" alt=""></a>
             <a class=tag href="./qa.html">常見問題</a>
-            <a class=tag href="./contant.html">聯絡我們</a>
-            <a class=tag href="#">立即預約</a>
+            <a class=tag href="./contact.html">聯絡我們</a>
+            <a class=tag href="./reserve.html">立即預約</a>
+            <div class="ham" id="ham">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </div>
+            <div class="navbar" id="navbar">
+                <a class=tag href="./about.html">關於我們</a>
+                <a class=tag href="./info.html">館內資訊</a>
+                <a class=tag href="./news.html">最新消息</a>
+                <a class=tag href="./qa.html">常見問題</a>
+                <a class=tag href="./contact.html">聯絡我們</a>
+                <a class=tag href="./reserve.html">立即預約</a>
+            </div>
         </div>
+        
     </div>
     <div class="banner">
+        <div class="banner-image">
+            <img src="./image/other-bg.jpg" alt="">
+        </div>
         <div class="wrap">
             <span>NEWS</span>
         </div>
@@ -35,61 +54,215 @@
     <section>
         <div class="label">
             <label for="all">全部</label>
+            
+
             <label for="important">重要</label>
+            
             <label for="events">活動</label>
+            
             <label for="blog">專欄</label>
+            
+
             <div class="search"><span class="icon"><i class="fa fa-search"></i></span>
                 <input type="search" id="search" placeholder="關鍵字" /></div>
         </div>
-            <div class="news">
-                <div class="news-card" onclick="location.href='./news.html';">
-                        <div class="pic">
-                            <img src="./image/news01.jpg" alt="">
-                        </div>
-                        <div class="txt">
-                            <div class="date">
-                                <div class="inner-title">2024/02/21</div>
-                                <label for="type">活動</label>
-                            </div>   
-                            <div class="newstitle inner-title">開幕優惠龍抵家！</div>
-                            <p>Meowin即將於2024/03/01正式開幕！於2024/3/1~2024/3/30期間，凡設籍於桃園市的顧客們，即享有250元優惠價。</p>
-                        </div>
-                    </div>
-                
-                    <div class="news-card" onclick="location.href='./news.html';">
-                        <div class="pic">
-                            <img src="./image/news02.jpg" alt="">
-                        </div>
-                        <div class="txt">
-                            <div class="date">
-                                <div class="inner-title">2024/01/28</div>
-                                <label for="type">活動</label>
-                            </div>   
-                            <div class="newstitle inner-title">Meowin試營運</div>
-                            <p>凡於2024/1/30~2/29試營運期間來館內遊玩，享優惠價400元/人。</p>
+            <div class="tab-content" id="important-content">
+                <div class="news">
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-02-21T13:00:00Z">
+                            <div class="pic">
+                                <img src="./image/news01.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/02/21</div>
+                                    <span>重要</span>
+                                </div>   
+                                <div class="newstitle inner-title">開幕優惠龍抵家！</div>
+                                <p>Meowin即將於2024/03/01正式開幕！於2024/3/1~2024/3/30期間，凡設籍於桃園市的顧客們，即享有250元優惠價。</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="news-card" onclick="location.href='./news.html';">
-                        <div class="pic">
-                            <img src="./image/news03.jpg" alt="">
-                        </div>
-                        <div class="txt">
-                            <div class="date">
-                                <div class="inner-title">2024/01/08</div>
-                                <label for="type">重要</label>
-                            </div>   
-                            <div class="newstitle inner-title">和貓咪一同玩樂吧!</div>
-                            <p>Meowin即將於2024/1/30試營運啦，歡迎揪三五好友一起來玩貓玩遊戲！</p>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" 
+                        data-timestamp="2024-01-28T13:00:00Z">
+                            <div class="pic">
+                                    <img src="./image/news02.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/01/28</div>
+                                    <span>重要</span>
+                                </div>   
+                                <div class="newstitle inner-title">Meowin試營運</div>
+                                <p>凡於2024/1/30~2/29試營運期間來館內遊玩，享優惠價400元/人。</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-01-08T13:00:00Z">
+                            <div class="pic">
+                                <img src="./image/news03.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/01/08</div>
+                                    <span>重要</span>
+                                </div>   
+                                <div class="newstitle inner-title">和貓咪一同玩樂吧!</div>
+                                <p>Meowin即將於2024/1/30試營運啦，歡迎揪三五好友一起來玩貓玩遊戲！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="tab-content" id="events-content">
+                <div class="news">
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-04-30T13:00:00Z">
+                            <div class="pic">
+                                <img src="./image/news04.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/4/30</div>
+                                    <span>活動</span>
+                                </div>   
+                                <div class="newstitle inner-title">開幕優惠龍抵家！</div>
+                                <p>Meowin即將於2024/03/01正式開幕！於2024/3/1~2024/3/30期間，凡設籍於桃園市的顧客們，即享有250元優惠價。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';"data-timestamp="2024-04-01T13:00:00Z">
+                            <div class="pic">
+                                    <img src="./image/news05.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/04/01</div>
+                                    <span>活動</span>
+                                </div>   
+                                <div class="newstitle inner-title">Meowin試營運</div>
+                                <p>凡於2024/1/30~2/29試營運期間來館內遊玩，享優惠價400元/人。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-03-20T13:00:00Z">
+                            <div class="pic">
+                                <img src="./image/news06.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/03/20</div>
+                                    <span>活動</span>
+                                </div>   
+                                <div class="newstitle inner-title">和貓咪一同玩樂吧!</div>
+                                <p>Meowin即將於2024/1/30試營運啦，歡迎揪三五好友一起來玩貓玩遊戲！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tab-content" id="blog-content">
+                <div class="news">
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-03-21T14:00:00Z">
+                            <div class="pic">
+                                <img src="./image/news07.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/03/21</div>
+                                    <span>專欄</span>
+                                </div>   
+                                <div class="newstitle inner-title">貓咪需要定期吐毛球的原因</div>
+                                <p>貓咪的舌頭具有特殊的「乳突構造」，就像一個一個小小的倒鉤狀，可以幫助貓咪『刮』除毛髮上的灰塵與髒污。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-02-28T13:30:00Z">
+                            <div class="pic">
+                                    <img src="./image/news08.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/02/28</div>
+                                    <span>專欄</span>
+                                </div>   
+                                <div class="newstitle inner-title">換毛季時更要注意毛球問題！</div>
+                                <p>貓咪可用唾液沾濕舌頭清理毛髮，當吞入的毛髮量增多又無法排出時，就會囤積在腸胃，成為「毛球症」。別以為毛球症沒什麼，若置之不理的話可能會衍生出可怕的併發症！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="news-card" onclick="location.href='./news.html';" data-timestamp="2024-02-03T13:00:00Z" >
+                            <div class="pic">
+                                <img src="./image/news09.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <div class="date">
+                                    <div class="inner-title">2024/02/03</div>
+                                    <span>專欄</span>
+                                </div>   
+                                <div class="newstitle inner-title">貓咪在不同生命階段要注意的毛髮問題</div>
+                                <p>根據不同年齡階段，貓咪的生理狀況也會有所不同。這次就針對「毛髮」來討論不同年齡的貓咪會需要哪些相關照護需求。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <div class="news">
+                <div class="news-card" onclick="location.href='./news.html';">
+                    <div class="pic">
+                        <img src="./image/news01.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="date">
+                            <div class="inner-title">2024/02/21</div>
+                            <label for="type">活動</label>
+                        </div>   
+                        <div class="newstitle inner-title">開幕優惠龍抵家！</div>
+                        <p>Meowin即將於2024/03/01正式開幕！於2024/3/1~2024/3/30期間，凡設籍於桃園市的顧客們，即享有250元優惠價。</p>
+                    </div>
+                </div>
+                <div class="news-card" onclick="location.href='./news.html';">
+                    <div class="pic">
+                            <img src="./image/news02.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="date">
+                            <div class="inner-title">2024/01/28</div>
+                            <label for="type">活動</label>
+                        </div>   
+                        <div class="newstitle inner-title">Meowin試營運</div>
+                        <p>凡於2024/1/30~2/29試營運期間來館內遊玩，享優惠價400元/人。</p>
+                    </div>
+                </div>
+                <div class="news-card" onclick="location.href='./news.html';">
+                    <div class="pic">
+                        <img src="./image/news03.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="date">
+                            <div class="inner-title">2024/01/08</div>
+                            <label for="type">重要</label>
+                        </div>   
+                        <div class="newstitle inner-title">和貓咪一同玩樂吧!</div>
+                        <p>Meowin即將於2024/1/30試營運啦，歡迎揪三五好友一起來玩貓玩遊戲！</p>
+                    </div>
+                </div>
+            </div> -->
     </section>
     
 
     
     <div class="footerlist">
         <div class="footer">
-            <a class=logo href=""><img src="./image/logo.png" alt=""></a>
+            <a class=logo href="./index.html"><img src="./image/logo.png" alt=""></a>
             <div class="info">
                 <p>地址：桃園市中壢區復興路46號</p>
                 <p>電話：03- 3456789</p>
@@ -105,5 +278,67 @@
             <p>©2024 Copyrights MEOWiN All Rights Reserved </p>
         </div>
     </div>
+<script>
+// 取得所有label元素
+var labels = document.querySelectorAll('label');
+
+// 為每個label元素添加點擊事件監聽器
+labels.forEach(function(label) {
+    label.addEventListener('click', function() {
+        // 隱藏所有分類的內容
+        var contents = document.querySelectorAll('.tab-content');
+        contents.forEach(function(content) {
+            content.style.display = 'none';
+        });
+        
+        // 取得被點擊的label的對應分類的內容的id
+        var targetId = this.getAttribute('for') + '-content';
+        
+        // 顯示對應的分類的內容
+        if (this.getAttribute('for') === 'all') {
+            contents.forEach(function(content) {
+                content.style.display = 'block';
+            });
+
+            // 取得所有內容
+            var allContents = [];
+            contents.forEach(function(content) {
+                Array.from(content.children).forEach(function(child) {
+                    allContents.push(child);
+                });
+            });
+
+            // 根據時間戳記重新排序
+            allContents.sort(function(a, b) {
+                var aTimestamp = new Date(a.getAttribute('data-timestamp'));
+                var bTimestamp = new Date(b.getAttribute('data-timestamp'));
+                return bTimestamp - aTimestamp;
+            });
+
+            // 重新排列內容
+            var allContentWrapper = document.querySelector('.news');
+            allContentWrapper.innerHTML = '';
+            allContents.forEach(function(child) {
+                allContentWrapper.appendChild(child);
+            });
+        } else {
+            document.getElementById(targetId).style.display = 'block';
+        }
+        
+        // 移除所有label的背景顏色
+        labels.forEach(function(label) {
+            label.style.backgroundColor = '';
+        });
+        
+        // 設定被點擊的label的背景顏色
+        this.style.backgroundColor = 'orange';
+    });
+});
+
+
+
+
+
+</script>
 </body>
 </html>

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEOWiN</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="nav_footer.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <script src="./header.js"></script>
+    <link rel="stylesheet" href="./setting.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,18 +15,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navlist">
-        <div class="nav">
+    <div class="header">
+        <div class="menu">
             <a class=tag href="./about.html">關於我們</a>
             <a class=tag href="./info.html">館內資訊</a>
             <a class=tag href="./news.html">最新消息</a>
             <a class=logo href="./index.html"><img src="./image/logo_longer.png" alt=""></a>
             <a class=tag href="./qa.html">常見問題</a>
-            <a class=tag href="./contant.html">聯絡我們</a>
-            <a class=tag href="#">立即預約</a>
+            <a class=tag href="./contact.html">聯絡我們</a>
+            <a class=tag href="./reserve.html">立即預約</a>
+            <div class="ham" id="ham">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </div>
+            <div class="navbar" id="navbar">
+                <a class=tag href="./about.html">關於我們</a>
+                <a class=tag href="./info.html">館內資訊</a>
+                <a class=tag href="./news.html">最新消息</a>
+                <a class=tag href="./qa.html">常見問題</a>
+                <a class=tag href="./contact.html">聯絡我們</a>
+                <a class=tag href="./reserve.html">立即預約</a>
+            </div>
         </div>
+        
     </div>
     <div class="banner">
+        <div class="banner-image">
+            <img src="./image/other-bg.jpg" alt="">
+        </div>
         <div class="wrap">
             <span>ABOUT US</span>
         </div>
@@ -50,10 +69,11 @@
             </div>
             <div class="txt">
                 <div class="eng-title">NOTION</div>
-                <p>我們的經營理念是致力於讓更多人喜愛貓咪。我們相信，通過與貓咪的互動，人們可以更好地了解和欣賞這些可愛的生物。</p>
-                <p>因此，我們鼓勵客人在考慮是否養貓時，先來到我們店裡與貓咪親密互動一番。透過這樣的體驗，他們可以更好地評估自己是否適合養貓，以及貓咪是否適合成為他們生活的一部分。</p>
-                <p>此外，我們也提供相關的養貓建議和資訊，幫助客人更好地了解貓咪的需求和照顧方法。我們相信，透過增加對貓咪的了解和培養對它們的喜愛，可以促進更多人與貓咪之間的和諧相處，從而建立更美好的人貓關係。</p>
-                <p>因此，我們的店不僅僅是一個供人們玩耍的場所，更是一個讓人們深入了解和喜愛貓咪的平台。我們希望透過我們的努力，能夠讓更多人受益於與貓咪相處的樂趣，並促進人與貓之間更加和諧的關係。</p>
+                <p class="txt-1">我們的經營理念是致力於讓更多人喜愛貓咪。我們相信，通過與貓咪的互動，人們可以更好地了解和欣賞這些可愛的生物。</p>
+                <p class="txt-1">因此，我們鼓勵客人在考慮是否養貓時，先來到我們店裡與貓咪親密互動一番。透過這樣的體驗，他們可以更好地評估自己是否適合養貓，以及貓咪是否適合成為他們生活的一部分。</p>
+
+                <p class="txt-2">此外，我們也提供相關的養貓建議和資訊，幫助客人更好地了解貓咪的需求和照顧方法。我們相信，透過增加對貓咪的了解和培養對它們的喜愛，可以促進更多人與貓咪之間的和諧相處，從而建立更美好的人貓關係。</p>
+                <p class="txt-2">因此，我們的店不僅僅是一個供人們玩耍的場所，更是一個讓人們深入了解和喜愛貓咪的平台。我們希望透過我們的努力，能夠讓更多人受益於與貓咪相處的樂趣，並促進人與貓之間更加和諧的關係。</p>
             </div>
             <div class="image-notion2">
                 <img src="./image/about_photo_03.png" alt="">
@@ -62,64 +82,62 @@
     </section>
     <section class="ourcats">
         <div class="eng-title">OUR CATS</div>
-        <div class="namelist">
-            <div class="namecard">
-                <div class="cat-headshot"><img src="./image/cat_komari_ headshot.png" alt=""></div>
-                <div class="name"><span>Komari</span></div>
-                
-            </div>
-            <div class="namecard">
-                <div class="cat-headshot"><img src="./image/cat_rico_headshot.png" alt=""></div>
-                <div class="name">
-                    <span>RICO</span>
+        <div class="cardlist">
+            <div class="namelist">
+                <div class="namecard">
+                    <div class="cat-headshot"><img src="./image/cat_komari_ headshot.png" alt=""></div>
+                    <div class="name"><span>Komari</span></div>
+                    
+                </div>
+                <div class="namecard">
+                    <div class="cat-headshot"><img src="./image/cat_rico_headshot.png" alt=""></div>
+                    <div class="name">
+                        <span>RICO</span>
+                    </div>
+                </div>
+                <div class="namecard">
+                    <div class="cat-headshot"><img src="./image/cat_karin_headshot.png" alt=""></div>
+                    <div class="name">
+                        <span>Karin</span>
+                    </div>
+                </div>
+                <div class="namecard">
+                    <div class="cat-headshot"><img src="./image/cat_kotora_headshot.png" alt=""></div>
+                    <div class="name">
+                        <span>Kotora</span>
+                    </div>
+                </div>
+                <div class="namecard">
+                    <div class="cat-headshot"><img src="./image/cat_kotora_headshot.png" alt=""></div>
+                    <div class="name">
+                        <span>Charle</span>
+                    </div>
                 </div>
             </div>
-            <div class="namecard">
-                <div class="cat-headshot"><img src="./image/cat_karin_headshot.png" alt=""></div>
-                <div class="name">
-                    <span>Karin</span>
+            <!-- <div class="infocard">
+                <div class="cat-photo">
+                    <img src="./image/cat_rico.jpg" alt="">
                 </div>
-            </div>
-            <div class="namecard">
-                <div class="cat-headshot"><img src="./image/cat_kotora_headshot.png" alt=""></div>
-                <div class="name">
-                    <span>Kotora</span>
+                <div class="cat-info">
+                    <p>姓名: Komari</p>
+                    <p>性別: 女</p>
+                    <p>生日: 2018/01/14</p>
+                    <p>種類: 蘇格蘭摺耳貓</p>
                 </div>
-            </div>
-            <div class="namecard">
-                <div class="cat-headshot"><img src="./image/cat_kotora_headshot.png" alt=""></div>
-                <div class="name">
-                    <span>Charle</span>
+            </div> -->
+            <div class="infocard" id="infocard">
+                <div class="cat-photo">
+                    <img src="" alt="" id="cat-photo">
+                </div>
+                <div class="cat-info" id="cat-info">
                 </div>
             </div>
         </div>
-        <div class="infocard">
-            <div class="cat-photolist">
-                <div class="cat-photo">
-                    <img src="./image/cat_komari_01.png" alt="">
-                </div>
-                <div class="cat-photo">
-                    <img src="./image/cat_komari_02.png" alt="">
-                </div>
-            </div>
-            <div class="dot">
-                <img src="./image/carousel-dot.png" alt="">
-                <img src="./image/carousel-dot.png" alt="">
-                <img src="./image/carousel-dot.png" alt="">
-                <img src="./image/carousel-dot.png" alt="">
-                <img src="./image/carousel-dot.png" alt="">
-            </div>
-            <div class="cat-info">
-                <p>姓名: Komari</p>
-                <p>性別: 女</p>
-                <p>生日: 2018/01/14</p>
-                <p>種類: 蘇格蘭摺耳貓</p>
-            </div>
-        </div>
+        
     </section>
     <div class="footerlist">
         <div class="footer">
-            <a class=logo href=""><img src="./image/logo.png" alt=""></a>
+            <a class=logo href="./index.html"><img src="./image/logo.png" alt=""></a>
             <div class="info">
                 <p>地址：桃園市中壢區復興路46號</p>
                 <p>電話：03- 3456789</p>
@@ -135,5 +153,51 @@
             <p>©2024 Copyrights MEOWiN All Rights Reserved </p>
         </div>
     </div>
+    <script>
+        var namecards = document.querySelectorAll('.namecard');
+        
+        namecards.forEach(function(card) {
+            card.addEventListener('click', function() {
+            var catName = card.querySelector('.name span').innerText;
+            showInfo(catName);
+            });
+        });
+        window.onload = function() {
+            showInfo('Komari');
+        };
+
+        function showInfo(catName) {
+            // document.getElementById('cat-photo').src = '';
+            // document.getElementById('cat-info').innerHTML = '';
+
+            var catInfo = {
+                'Komari': {
+                    'photo': './image/cat_komari_01.png',
+                    'info': 
+                        `<p>姓名: Komari</p>
+                        <p>性別: 女</p>
+                        <p>生日: 2018/01/14</p>
+                        <p>種類: 蘇格蘭摺耳貓</p>`
+                },
+                'RICO': {
+                    'photo': './image/cat_rico.jpg',
+                    'info':
+                        `<p>姓名: RICO</p>
+                        <p>性別: 女</p>
+                        <p>生日: 2018/01/14</p>
+                        <p>種類: 蘇格蘭摺耳貓</p>`
+            },
+            // 添加其他猫咪的信息
+            };
+
+            var catPhoto = document.getElementById('cat-photo');
+            var catInfoDiv = document.getElementById('cat-info');
+        
+            if (catName in catInfo) {
+            catPhoto.src = catInfo[catName]['photo'];
+            catInfoDiv.innerHTML = catInfo[catName]['info'];
+            }
+        }
+        </script>
 </body>
 </html>

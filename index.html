@@ -5,26 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEOWiN</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="nav_footer.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <script src="./header.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
-    <div class="navlist">
-        <div class="nav">
+    <div class="header">
+        <div class="menu">
             <a class=tag href="./about.html">關於我們</a>
             <a class=tag href="./info.html">館內資訊</a>
             <a class=tag href="./news.html">最新消息</a>
             <a class=logo href="./index.html"><img src="./image/logo_longer.png" alt=""></a>
             <a class=tag href="./qa.html">常見問題</a>
-            <a class=tag href="./contant.html">聯絡我們</a>
-            <a class=tag href="#">立即預約</a>
+            <a class=tag href="./contact.html">聯絡我們</a>
+            <a class=tag href="./reserve.html">立即預約</a>
+            <div class="ham" id="ham">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </div>
+            <div class="navbar" id="navbar">
+                <a class=tag href="./about.html">關於我們</a>
+                <a class=tag href="./info.html">館內資訊</a>
+                <a class=tag href="./news.html">最新消息</a>
+                <a class=tag href="./qa.html">常見問題</a>
+                <a class=tag href="./contact.html">聯絡我們</a>
+                <a class=tag href="./reserve.html">立即預約</a>
+            </div>
         </div>
+        
     </div>
     <div class="banner">
+        <div class="banner-image">
+            <img src="./image/banner_new.jpg" alt="">
+        </div>
         <div class="wrap">
             <div class="logo">
                 <img src="./image/logo.png" alt="">
@@ -39,8 +60,8 @@
                 <div class="pic">
                     <div class="image">
                         <img class="photo" src="./image/index_photo_01.png" alt="">
-                        <img class="orangefoot-1" src="./image/orangefoot.png" alt="">
-                        <img class="orangefoot-2" src="./image/orangefoot.png" alt="">
+                        <img class="paw second-move orangefoot-1"  src="./image/orangefoot.png" alt="">
+                        <img class="paw first-move orangefoot-2" src="./image/orangefoot.png" alt="">
                     </div>
                     
                 </div>
@@ -67,16 +88,16 @@
             <div class="about-deco">
                 <div class="pic-bk">
                     <div class="image">
-                        <img class="blackfoot-1" src="./image/blackfoot.png" alt="">
-                        <img class="blackfoot-2" src="./image/blackfoot.png" alt="">
-                        <img class="blackfoot-3" src="./image/blackfoot.png" alt="">
+                        <img class="paw first-move paw blackfoot-1" src="./image/blackfoot.png" alt="">
+                        <img class="paw second-move paw blackfoot-2" src="./image/blackfoot.png" alt="">
+                        <img class="paw third-move paw blackfoot-3" src="./image/blackfoot.png" alt="">
                         <img class="photo" src="./image/index_photo_03.png" alt="">
                     </div>
                 </div>
                 <div class="pic-gr">
                     <div class="image">
                         <img class="photo" src="./image/index_photo_04.png" alt="">
-                        <img class="geryfoot" src="./image/geryfoot.png" alt="">
+                        <img class="paw first-move geryfoot" src="./image/geryfoot.png" alt="">
                     </div>
                 </div>
             </div>
@@ -92,9 +113,9 @@
                     </div>
                     <div class="pic">
                         <img class="feature-first" src="./image/index_feature01.png" alt="">
-                        <img class="orangefoot-1" src="./image/orangefoot.png" alt="">
-                        <img class="orangefoot-2" src="./image/orangefoot.png" alt="">
-                        <img class="orangefoot-3" src="./image/orangefoot.png" alt="">
+                        <img class="paw first-move orangefoot-1" src="./image/orangefoot.png" alt="">
+                        <img class="paw second-move orangefoot-2" src="./image/orangefoot.png" alt="">
+                        <img class="paw third-move orangefoot-3" src="./image/orangefoot.png" alt="">
 
                     </div>
                 </div>
@@ -104,8 +125,8 @@
             <div class="feature-love">
                 <div class="pic">
                     <img class="feature-second" src="./image/index_feature02.png" alt="">
-                    <img class="whitefoot-1" src="./image/whitefoot.png" alt="">
-                    <img class="whitefoot-2" src="./image/whitefoot.png" alt="">
+                    <img class="paw second-move whitefoot-1" src="./image/whitefoot.png" alt="">
+                    <img class="paw first-move whitefoot-2" src="./image/whitefoot.png" alt="">
                 </div>
                 <div class="love-txt">
                     <span class="inner-title">專業的照顧和關愛</span>
@@ -118,9 +139,9 @@
                         </div>
                         <div class="pic">
                             <img class="feature-third" src="./image/index_feature03.png" alt="">
-                            <img class="geryfoot-1"src="./image/geryfoot.png" alt="">
-                            <img class="geryfoot-2"src="./image/geryfoot.png" alt="">
-                            <img class="blackfoot"src="./image/blackfoot.png" alt="">
+                            <img class="paw first-move geryfoot-1"src="./image/geryfoot.png" alt="">
+                            <img class="paw second-move geryfoot-2"src="./image/geryfoot.png" alt="">
+                            <img class="paw third-move blackfoot"src="./image/blackfoot.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -128,26 +149,29 @@
             
         </div>
     </section>
-    <section class="carousel">
-        <img src="./image/carousel02.svg" alt="">
-        <img class="middle" src="./image/carousel01.svg" alt="">
-        <img src="./image/carousel03.svg" alt="">
-        <div class="carousel-dot">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
-            <img src="./image/carousel-dot.png" alt="">
+    <!-- Swiper -->
+    <div class="cat-swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/index_slide_01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_04.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_05.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_06.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_07.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_08.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/index_slide_09.jpg" alt=""></div>
+            </div>
+        <div class="swiper-pagination"></div>
         </div>
-    </section>
+    </div>
     <section class="news">
+        <div class="foot">
+            <img class="paw first-move whitefoot-1" src="./image/whitefoot.png" alt="">
+            <img class="paw second-move whitefoot-2" src="./image/whitefoot.png" alt="">
+            <img class="whitefoot-3" src="./image/whitefoot.png" alt="">
+        </div>
         <div class="news-list">
             <div class="eng-title">News</div>
             <div class="list">
@@ -167,19 +191,18 @@
                     <p class="title">和貓咪一同玩樂吧</p>
                 </div>
             </div>
+            
         </div>
         <div class="foot">
-            <img class="whitefoot-1" src="./image/whitefoot.png" alt="">
-            <img class="whitefoot-2" src="./image/whitefoot.png" alt="">
             <img class="whitefoot-3" src="./image/whitefoot.png" alt="">
-            <img class="orangefoot-1" src="./image/orangefoot.png" alt="">
-            <img class="orangefoot-2" src="./image/orangefoot.png" alt="">
-            <img class="orangefoot-3" src="./image/orangefoot.png" alt="">
+            <img class="paw first-move orangefoot-1" src="./image/orangefoot.png" alt="">
+            <img class="paw second-move orangefoot-2" src="./image/orangefoot.png" alt="">
+            <img class="paw third-move orangefoot-3" src="./image/orangefoot.png" alt="">
         </div>
     </section>
     <div class="footerlist">
         <div class="footer">
-            <a class=logo href=""><img src="./image/logo.png" alt=""></a>
+            <a class=logo href="./index.html"><img src="./image/logo.png" alt=""></a>
             <div class="info">
                 <p>地址：桃園市中壢區復興路46號</p>
                 <p>電話：03- 3456789</p>
@@ -195,5 +218,41 @@
             <p>©2024 Copyrights MEOWiN All Rights Reserved </p>
         </div>
     </div>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    // 添加顯示類
+  function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.bottom < 0 || rect.top > window.innerHeight;
+}
+
+function addClassToVisibleElements() {
+  var paw = document.querySelectorAll(".paw");
+  paw.forEach(function (paw) {
+    if (!isElementInViewport(paw)) paw.classList.add("move");
+    else paw.classList.remove("move");
+  });
+}
+
+document.addEventListener("scroll", addClassToVisibleElements);
+addClassToVisibleElements();
+
+  
+  </script>
 </body>
 </html>

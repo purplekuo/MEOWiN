@@ -1,0 +1,138 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    flex-grow: 1;
+    /* display: block; */
+}
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.banner-image{
+    width: 100%;
+    filter: brightness(50%);
+}
+.banner-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.banner .wrap {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 33%;
+}
+
+.banner span {
+    /* margin: 10px; */
+    font-family: "Cherry Bomb One";
+    color: white;
+    font-size: 64px;
+    letter-spacing: 16px;
+    text-shadow: 2px 2px 2px black
+}
+
+section {
+    background-color: #FAE6B1;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-grow: 1; */
+    /* padding-right: 18.75%; */
+}
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.eng-title {
+    width: 100%;
+    font-family: "Cherry Bomb One";
+    font-size: 48px;
+    letter-spacing: 16px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+section p {
+    line-height: 25px;
+    letter-spacing: 0.18em;
+    margin: 25px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.inner-title {
+    line-height: 40px;
+    letter-spacing: 0.18em;
+    margin: 25px 0px 0px 0px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .banner-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        filter: brightness(50%);
+        overflow: hidden;
+    }
+    .banner-image img{
+        display: block;
+        width: 150%;
+        height: auto;
+    }
+    .banner .wrap {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 33%;
+    }
+    .banner span {
+        font-size: 48px;
+        letter-spacing: 14px;
+    }
+    .eng-title {
+        font-size: 36px;
+        letter-spacing: 14px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    section p {
+        line-height: 25px;
+        letter-spacing: 0.18em;
+        margin: 25px 0px 0px 0px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .banner span {
+        font-size: 36px;
+        letter-spacing: 12px;
+    }
+    .eng-title{
+        font-size: 24px;
+        letter-spacing: 12px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    section p {
+        line-height: 25px;
+        letter-spacing: 0.18em;
+        margin: 12.5px 0px 0px 0px;
+        font-size: 14px;
+    }
+}

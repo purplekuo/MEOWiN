@@ -1,0 +1,107 @@
+.label {
+    /* padding: 50px 0px; */
+    margin-top: 50px;
+}
+label {
+    cursor: pointer;
+    order: 0;
+    border-radius: 50px;
+    /* width: 13vw; */
+    width: 150px;
+    aspect-ratio: 3/1;
+    background-color: #ffcc2299;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0px 25px 25px 0px;
+}
+
+label:hover {
+    color: #000;
+}
+.qna {
+    /* width: 50%; */
+    border-bottom: 2px dashed #ffcc22;
+    margin-bottom: 50px;
+}
+.answer p {
+    margin: 20px 0px;
+}
+.tab-content {
+    display: none;
+    width: 50%;
+}
+@media screen and (max-width: 768px){
+    .banner span {
+        font-size: 36px;
+        letter-spacing: 14px;
+    }
+    section p {
+        line-height: 25px;
+        letter-spacing: 0.18em;
+        margin: 25px 0px 0px 0px;
+        font-size: 12px;
+    }
+    .label {
+    /* padding: 25px 0px; */
+    margin-top: 25px;
+}
+    label {
+        width: 130px;
+        font-size: 12px;
+        margin: 0px 20px 20px 0px;
+        /* margin: 0px 12.5px 12.5px 12.5px; */
+    }
+    .inner-title {
+        line-height: 30px;
+        letter-spacing: 20%;
+        margin: 25px 0px 0px 0px;
+        font-size: 18px;
+    }
+    .answer p {
+    margin: 15px 0px;
+    }
+    .qna {
+    margin-bottom: 25px;
+    }
+    .tab-content {
+    width: 60%;
+}
+}
+@media screen and (max-width: 430px){
+    .banner span {
+        font-size: 26px;
+        letter-spacing: 12px;
+    }
+    section p {
+        line-height: 25px;
+        letter-spacing: 0.18em;
+        margin: 12.5px 0px 0px 0px;
+        font-size: 12px;
+    }
+    .label {
+    /* padding: 25px 0px; */
+    margin-top: 12.5px;
+    }
+    label {
+        width: 120px;
+        font-size: 12px;
+    }
+    .inner-title {
+        line-height: 20px;
+        letter-spacing: 15%;
+        margin: 12.5px 0px 0px 0px;
+        font-size: 16px;
+    }
+    .answer p {
+    margin: 10px 0px;
+    }
+    .qna {
+    margin-bottom: 12.5px;
+    }
+    .tab-content {
+        width: 55%;
+    }
+}

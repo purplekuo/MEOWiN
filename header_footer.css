@@ -1,0 +1,172 @@
+body {
+    font-family: "Noto Sans TC";
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.menu {
+    max-width: 1200px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu .tag {
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    /* margin: 0px 45px; */
+}
+.menu .logo {
+    width: 10%;
+    display: flex;
+    /* margin: 0px 45px; */
+}
+.menu .logo img {
+    width: 100%;
+    align-content: center;
+}
+.navbar {
+    display: none;
+}
+.ham {
+    display: none;
+    position: relative;
+    /* width: ; */
+    /* height: 36px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham-line {
+    /* display: block; */
+    margin: 4px 0;
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: none;
+}
+.footerlist {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footerlist p {
+    letter-spacing: 0.2em;
+    font-size: 14px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 20px;
+}
+
+.footer .logo {
+    align-content: center;
+    width: 165px;
+}
+.footer .logo img {
+    width: 100%;
+    
+}
+
+.footer .info {
+    align-content: center;
+    line-height: 30px;
+}
+
+.followus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    /* .header {
+        padding: 10px 10px;
+    } */
+    .menu {
+        justify-content: space-between;
+        position: relative;
+    }
+    .menu > .tag {
+        display: none;
+    }
+    .menu > .logo {
+        /* width: 45%; */
+        width: 25%;
+        margin: 10px;
+    }
+    .menu > .ham {
+        display: flex;
+        margin: 10px;
+    }
+    .ham-line {
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        background-color: #000;
+        
+    }
+    .navbar > a {
+        /* display: flex; */
+        /* justify-content: center; */
+        width: 90%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        /* margin:auto; */
+        border-bottom: 1px solid;
+    }
+    .navbar >a:hover{
+        background-color: #ffbf00;
+        border-radius: 8px;
+    }
+    .footerlist p {
+        letter-spacing: 0.2em;
+        font-size: 12px;
+    }
+    .footer .logo {
+        width: 100px;
+    }
+    .followus img {
+        width: 80%;
+    }
+    .navbar{
+        display: none;
+    }
+}
+@media screen and (max-width: 430px) {
+    .footer .logo {
+        width: 80px;
+    }
+    .followus img {
+        width: 70%;
+    }
+}
